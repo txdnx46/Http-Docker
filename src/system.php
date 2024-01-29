@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['add_book'])) {
     move_uploaded_file($image_temp, $image_path);
 
  
-    $sql = "INSERT INTO books (user_id, title, author, image) VALUES ('$user_id', '$title', '$author','$image_name ')";
+    $sql = "INSERT INTO books (user_id, title, author, image) VALUES ('$user_id', '$title', '$author','$image_name')";
     mysqli_query($conn, $sql);
 
 
@@ -63,4 +63,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_book'])) {
 $sql = "select * from books where user_id = '$user_id'";
 $result = mysqli_query($conn,$sql);
 $books = $result->fetch_all(MYSQLI_ASSOC);
-?>

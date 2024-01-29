@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+   
+    <center>
+        <div class="container">
+            <form method="post" action="">
+                <h2>LOGIN UNSERNAME</h2>
+
+                <input type="text" name="username" placeholder="username" required><br>
+    
+                <input type="password" name="password" placeholder="password" required><br>
+    
+                <div class="btn">
+                    <input class="sub" type="submit" value="เข้าสู่ระบบ">
+                    <button><a href="register.php">สมัครสมาชิก</a></button>
+                </div>
+            </form>
+        </div>
+    </center>
+
+
+</body>
+</html>
+
+
+<style>
+     center{
+        margin-top: 130px;
+    }
+    .container{
+       margin-top: 50px;
+       background-image: url('https://cdn.pixabay.com/photo/2017/03/12/13/44/blue-2137089_1280.jpg');
+       padding: 5%;
+       margin: 50px;
+       width: 800px;
+       height: 300px;
+       border-radius: 25px;
+       display: flex;
+       color: #000000;
+       box-shadow: 5px 5px 10px 5px rgb(196, 196, 196);
+       gap: 150px;
+       
+    }
+    .container form h2{
+        color: #66B2FF ;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container form input{
+        height: 25px;
+        margin-top: 15px;
+        border-radius: px;
+        padding: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px 5px rgb(196, 196, 196);
+        width: 300px;
+    }
+    .container form .sub{
+        color: aliceblue;
+        padding: 10px;
+        border: none;
+        font-weight: bold;
+        background-color: #66B2FF;
+        width: 225px;   
+        margin-right: 15px;
+        height: 50px;
+    }
+    .container form button{
+        margin-top: 15px;
+        padding: 8px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 5px 5px 10px 5px rgb(196, 196, 196);
+        color: #ffffff;
+    }
+    .container form button a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+    .btn{
+        display: flex;
+        width: 320px;
+    }
+</style>
