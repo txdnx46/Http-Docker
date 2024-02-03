@@ -45,7 +45,7 @@ if ($count->num_rows > 0) {
     </div>
 
     <center>
-        <div class="container" style="margin:25px; width:100%; margin-top:25px">
+        <div style="margin:25px; width:100%; margin-top:25px">
             <div class="" style="width:900px;">
                 <form style="display:flex;" method="post" action="" enctype="multipart/form-data" class="mb-4 mt-3">
                     <input style="padding: 10px; margin:5px; width:100%; box-shadow:#d6d6d6 1px 1px 1px 1px ; border:none ;" type="text" name="title" class="form-control" placeholder="booksname" required><br>
