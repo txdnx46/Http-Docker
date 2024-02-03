@@ -3,8 +3,9 @@ session_start();
 
 include 'system.php';
 
-$sql = "SELECT COUNT(*) AS total_books FROM books WHERE user_id = '$user_id'";
+$sql = "SELECT COUNT(*) AS total_books FROM books  WHERE user_id = '$user_id'";
 $count = $conn->query($sql);
+
 
 $total_books = 0; // กำหนดค่าเริ่มต้นให้เป็น 0
 
@@ -32,6 +33,10 @@ if ($count->num_rows > 0) {
             <div class="logo">
                 <img style="width: 150px; height:150px" src="books-removebg-preview.png" alt="">
             </div>
+            <div style="display:flex; justify-content:space-between; align-items: center; height:20px; width:200px ;border-radius: 5px; padding:15px; background-color: #fff;box-shadow:#d6d6d6 1px 1px 1px 1px ; ">
+                <p>Books Quantity</p>
+                <h4><?php echo $total_books; ?></h4>
+            </div>
             <ul style="list-style: none; display:flex;   align-items:center; gap:20px;">
                 <li><a style="color:#0e032e; text-decoration:none; font-weight:bold; ">EXIT</a></li>
                 <li><a style="color:#66B2FF; text-decoration:none; font-weight:bold; " href="page.php">X</a></li>
@@ -50,15 +55,7 @@ if ($count->num_rows > 0) {
                 </form>
             </div>
         </div>
-        <div style="display:flex; justify-content:space-between; align-items: center; width:200px ;border-radius: 5px; background-color: #fff;box-shadow:#d6d6d6 1px 1px 1px 1px ; ">
-            <div>
-                <img style=" height:15%; width:80px; border-radius: 100%;" src="profile/<?php echo $_SESSION['profile']; ?>" alt="">
-            </div>
-            <div style="display:grid ; height:15% ; width:40%; background-color: #0e032e; color:#fff; border-radius: 5%;">
-                <p>Books Quantity</p>
-                <h4><?php echo $total_books; ?></h4>
-            </div>
-        </div>
+
     </center>
 
 

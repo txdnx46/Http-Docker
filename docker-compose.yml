@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   new:
-    build: . 
+    build: .  
     volumes:
       - ./src:/var/www/html 
     ports:

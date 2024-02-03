@@ -42,7 +42,7 @@ if (isset($_SESSION['username'])) {
             </div>
             <div style="width:150px ; height:100%">
                 <ul style="list-style: none; display:flex; align-items:center; gap:20px;">
-                    <img style="margin-top:20px; width:60%; height:60%; border-radius: 100%;" src="profile/<?php echo $_SESSION['profile']; ?>" alt="">
+                    <img style="margin-top:20px; width:60%; height:60%; border-radius: 100%;" src="profile/<?php echo  $row['image']; ?>" alt="">
                     <li><a style="color:#66B2FF; text-decoration:none; font-weight:bold; " href="index.php">X</a></li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@ if (isset($_SESSION['username'])) {
             <div>
                 <div style="width:50%;">
                     <div style="display:flex; justify-content:center;">
-                        <img style="margin-top:20px; width:30%; height:30%; border-radius: 100%; background-color:#f2f2f2 ;" src="profile/<?php echo $_SESSION['profile']; ?>" alt="">
+                        <img style="margin-top:20px; width:30%; height:30%; border-radius: 100%; background-color:#f2f2f2 ;" src="./profile/<?php echo  $row['image']; ?>" alt="">
                     </div>
                     <h2 style="color:#66B2FF;">Welcome user
                         <?php echo $username; ?>

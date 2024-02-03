@@ -37,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
         if ($result) {
             // ถ้าเสร็จสมบูรณ์ กำหนดค่า session 
             $_SESSION['username'] = $username;
-            $_SESSION['profile'] = $imagename ; 
             $_SESSION['user_id'] = $conn->insert_id;
         }
     }
